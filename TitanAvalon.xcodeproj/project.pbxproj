@@ -13,6 +13,12 @@
 		0E231BA2200F13F700907D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E231BA1200F13F700907D39 /* Assets.xcassets */; };
 		0E231BA5200F13F700907D39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E231BA3200F13F700907D39 /* LaunchScreen.storyboard */; };
 		0E231BB0200F13F800907D39 /* TitanAvalonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E231BAF200F13F800907D39 /* TitanAvalonTests.swift */; };
+		0E95C3A82011908E0019B72A /* CharacterGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3A72011908D0019B72A /* CharacterGeneratorTests.swift */; };
+		0E95C3AC2011909C0019B72A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3A92011909C0019B72A /* Character.swift */; };
+		0E95C3AD2011909C0019B72A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3AA2011909C0019B72A /* User.swift */; };
+		0E95C3AE2011909C0019B72A /* CharacterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3AB2011909C0019B72A /* CharacterGenerator.swift */; };
+		9B112D12F724FB34666AD48A /* Pods_TitanAvalon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF797EAB8BC3FE2F160515A /* Pods_TitanAvalon.framework */; };
+		9EF2C30DEC96A4AF973D5DD1 /* Pods_TitanAvalonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13471C7A50CD9A9814D7FCA1 /* Pods_TitanAvalonTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,16 @@
 		0E231BAB200F13F800907D39 /* TitanAvalonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TitanAvalonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E231BAF200F13F800907D39 /* TitanAvalonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitanAvalonTests.swift; sourceTree = "<group>"; };
 		0E231BB1200F13F800907D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E95C3A72011908D0019B72A /* CharacterGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterGeneratorTests.swift; sourceTree = "<group>"; };
+		0E95C3A92011909C0019B72A /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		0E95C3AA2011909C0019B72A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0E95C3AB2011909C0019B72A /* CharacterGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterGenerator.swift; sourceTree = "<group>"; };
+		13471C7A50CD9A9814D7FCA1 /* Pods_TitanAvalonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TitanAvalonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4347854705A817041A7F9269 /* Pods-TitanAvalonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TitanAvalonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TitanAvalonTests/Pods-TitanAvalonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		509B455270C02340D1916477 /* Pods-TitanAvalon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TitanAvalon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TitanAvalon/Pods-TitanAvalon.debug.xcconfig"; sourceTree = "<group>"; };
+		5FF797EAB8BC3FE2F160515A /* Pods_TitanAvalon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TitanAvalon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F3CC89EF44FD8233AC24BC /* Pods-TitanAvalonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TitanAvalonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TitanAvalonTests/Pods-TitanAvalonTests.release.xcconfig"; sourceTree = "<group>"; };
+		DD3B32C9904283A224FD59E1 /* Pods-TitanAvalon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TitanAvalon.release.xcconfig"; path = "Pods/Target Support Files/Pods-TitanAvalon/Pods-TitanAvalon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B112D12F724FB34666AD48A /* Pods_TitanAvalon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EF2C30DEC96A4AF973D5DD1 /* Pods_TitanAvalonTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,8 @@
 				0E231B99200F13F700907D39 /* TitanAvalon */,
 				0E231BAE200F13F800907D39 /* TitanAvalonTests */,
 				0E231B98200F13F700907D39 /* Products */,
+				E53CFDA2C44259520D0356F8 /* Pods */,
+				8DDD9421C31258EB034C512E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +97,9 @@
 		0E231B99200F13F700907D39 /* TitanAvalon */ = {
 			isa = PBXGroup;
 			children = (
+				0E95C3A92011909C0019B72A /* Character.swift */,
+				0E95C3AB2011909C0019B72A /* CharacterGenerator.swift */,
+				0E95C3AA2011909C0019B72A /* User.swift */,
 				0E231B9A200F13F700907D39 /* AppDelegate.swift */,
 				0E231B9C200F13F700907D39 /* ViewController.swift */,
 				0E231B9E200F13F700907D39 /* Main.storyboard */,
@@ -90,10 +113,31 @@
 		0E231BAE200F13F800907D39 /* TitanAvalonTests */ = {
 			isa = PBXGroup;
 			children = (
+				0E95C3A72011908D0019B72A /* CharacterGeneratorTests.swift */,
 				0E231BAF200F13F800907D39 /* TitanAvalonTests.swift */,
 				0E231BB1200F13F800907D39 /* Info.plist */,
 			);
 			path = TitanAvalonTests;
+			sourceTree = "<group>";
+		};
+		8DDD9421C31258EB034C512E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FF797EAB8BC3FE2F160515A /* Pods_TitanAvalon.framework */,
+				13471C7A50CD9A9814D7FCA1 /* Pods_TitanAvalonTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E53CFDA2C44259520D0356F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				509B455270C02340D1916477 /* Pods-TitanAvalon.debug.xcconfig */,
+				DD3B32C9904283A224FD59E1 /* Pods-TitanAvalon.release.xcconfig */,
+				4347854705A817041A7F9269 /* Pods-TitanAvalonTests.debug.xcconfig */,
+				77F3CC89EF44FD8233AC24BC /* Pods-TitanAvalonTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E231BB4200F13F800907D39 /* Build configuration list for PBXNativeTarget "TitanAvalon" */;
 			buildPhases = (
+				1F57D5CCDF942B58A69F840A /* [CP] Check Pods Manifest.lock */,
 				0E231B93200F13F700907D39 /* Sources */,
 				0E231B94200F13F700907D39 /* Frameworks */,
 				0E231B95200F13F700907D39 /* Resources */,
+				D1C97458AAEDB2DEC7068843 /* [CP] Embed Pods Frameworks */,
+				8E91C9E3BDC0612486A0126E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E231BB7200F13F800907D39 /* Build configuration list for PBXNativeTarget "TitanAvalonTests" */;
 			buildPhases = (
+				2E3AEFB768E8D38637A1C7A0 /* [CP] Check Pods Manifest.lock */,
 				0E231BA7200F13F800907D39 /* Sources */,
 				0E231BA8200F13F800907D39 /* Frameworks */,
 				0E231BA9200F13F800907D39 /* Resources */,
+				405098B0BEA4250AA81D8981 /* [CP] Embed Pods Frameworks */,
+				6D86151F6AD2251A2C9171E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,12 +244,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F57D5CCDF942B58A69F840A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TitanAvalon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E3AEFB768E8D38637A1C7A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TitanAvalonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		405098B0BEA4250AA81D8981 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TitanAvalonTests/Pods-TitanAvalonTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D86151F6AD2251A2C9171E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TitanAvalonTests/Pods-TitanAvalonTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E91C9E3BDC0612486A0126E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TitanAvalon/Pods-TitanAvalon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1C97458AAEDB2DEC7068843 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TitanAvalon/Pods-TitanAvalon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TitanAvalon/Pods-TitanAvalon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0E231B93200F13F700907D39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E95C3AD2011909C0019B72A /* User.swift in Sources */,
+				0E95C3AC2011909C0019B72A /* Character.swift in Sources */,
 				0E231B9D200F13F700907D39 /* ViewController.swift in Sources */,
+				0E95C3AE2011909C0019B72A /* CharacterGenerator.swift in Sources */,
 				0E231B9B200F13F700907D39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E231BB0200F13F800907D39 /* TitanAvalonTests.swift in Sources */,
+				0E95C3A82011908E0019B72A /* CharacterGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +509,7 @@
 		};
 		0E231BB5200F13F800907D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 509B455270C02340D1916477 /* Pods-TitanAvalon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +525,7 @@
 		};
 		0E231BB6200F13F800907D39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3B32C9904283A224FD59E1 /* Pods-TitanAvalon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +541,7 @@
 		};
 		0E231BB8200F13F800907D39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4347854705A817041A7F9269 /* Pods-TitanAvalonTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +559,7 @@
 		};
 		0E231BB9200F13F800907D39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F3CC89EF44FD8233AC24BC /* Pods-TitanAvalonTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

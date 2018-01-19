@@ -1,11 +1,3 @@
-//
-//  TitanAvalonTests.swift
-//  TitanAvalonTests
-//
-//  Created by paulps on 2018/1/17.
-//  Copyright © 2018年 paulps. All rights reserved.
-//
-
 import XCTest
 @testable import TitanAvalon
 
