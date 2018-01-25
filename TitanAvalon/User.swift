@@ -16,6 +16,7 @@ class User : Hashable {
     }
     
     var name : String
+    var character : Character?
     
     init(_ name:String) {
         self.name = name
