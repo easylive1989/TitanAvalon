@@ -13,10 +13,12 @@
 		0E231BA2200F13F700907D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E231BA1200F13F700907D39 /* Assets.xcassets */; };
 		0E231BA5200F13F700907D39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E231BA3200F13F700907D39 /* LaunchScreen.storyboard */; };
 		0E231BB0200F13F800907D39 /* TitanAvalonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E231BAF200F13F800907D39 /* TitanAvalonTests.swift */; };
+		0E74CC3D20254EC200FFAFCC /* RelationshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E74CC3C20254EC200FFAFCC /* RelationshipTests.swift */; };
 		0E95C3A82011908E0019B72A /* CharacterGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3A72011908D0019B72A /* CharacterGeneratorTests.swift */; };
 		0E95C3AC2011909C0019B72A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3A92011909C0019B72A /* Character.swift */; };
 		0E95C3AD2011909C0019B72A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3AA2011909C0019B72A /* User.swift */; };
 		0E95C3AE2011909C0019B72A /* CharacterGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3AB2011909C0019B72A /* CharacterGenerator.swift */; };
+		0EEDEEE7201AC289003E6F17 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEDEEE6201AC289003E6F17 /* Relationship.swift */; };
 		9B112D12F724FB34666AD48A /* Pods_TitanAvalon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF797EAB8BC3FE2F160515A /* Pods_TitanAvalon.framework */; };
 		9EF2C30DEC96A4AF973D5DD1 /* Pods_TitanAvalonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13471C7A50CD9A9814D7FCA1 /* Pods_TitanAvalonTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,10 +44,12 @@
 		0E231BAB200F13F800907D39 /* TitanAvalonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TitanAvalonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E231BAF200F13F800907D39 /* TitanAvalonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitanAvalonTests.swift; sourceTree = "<group>"; };
 		0E231BB1200F13F800907D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E74CC3C20254EC200FFAFCC /* RelationshipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipTests.swift; sourceTree = "<group>"; };
 		0E95C3A72011908D0019B72A /* CharacterGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterGeneratorTests.swift; sourceTree = "<group>"; };
 		0E95C3A92011909C0019B72A /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		0E95C3AA2011909C0019B72A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0E95C3AB2011909C0019B72A /* CharacterGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterGenerator.swift; sourceTree = "<group>"; };
+		0EEDEEE6201AC289003E6F17 /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
 		13471C7A50CD9A9814D7FCA1 /* Pods_TitanAvalonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TitanAvalonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4347854705A817041A7F9269 /* Pods-TitanAvalonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TitanAvalonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TitanAvalonTests/Pods-TitanAvalonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		509B455270C02340D1916477 /* Pods-TitanAvalon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TitanAvalon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TitanAvalon/Pods-TitanAvalon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				0E231BA1200F13F700907D39 /* Assets.xcassets */,
 				0E231BA3200F13F700907D39 /* LaunchScreen.storyboard */,
 				0E231BA6200F13F700907D39 /* Info.plist */,
+				0EEDEEE6201AC289003E6F17 /* Relationship.swift */,
 			);
 			path = TitanAvalon;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				0E95C3A72011908D0019B72A /* CharacterGeneratorTests.swift */,
 				0E231BAF200F13F800907D39 /* TitanAvalonTests.swift */,
 				0E231BB1200F13F800907D39 /* Info.plist */,
+				0E74CC3C20254EC200FFAFCC /* RelationshipTests.swift */,
 			);
 			path = TitanAvalonTests;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E95C3AD2011909C0019B72A /* User.swift in Sources */,
+				0EEDEEE7201AC289003E6F17 /* Relationship.swift in Sources */,
 				0E95C3AC2011909C0019B72A /* Character.swift in Sources */,
 				0E231B9D200F13F700907D39 /* ViewController.swift in Sources */,
 				0E95C3AE2011909C0019B72A /* CharacterGenerator.swift in Sources */,
@@ -367,6 +374,7 @@
 			files = (
 				0E231BB0200F13F800907D39 /* TitanAvalonTests.swift in Sources */,
 				0E95C3A82011908E0019B72A /* CharacterGeneratorTests.swift in Sources */,
+				0E74CC3D20254EC200FFAFCC /* RelationshipTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

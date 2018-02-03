@@ -12,4 +12,9 @@ enum Character {
     case Oberon
     case MsOfMordred
     case Mordred
+    
+    func isEvils() -> Bool {
+        return self == .Morcana || self == .Assassin || self == .MsOfMordred || self == .Mordred || self == .Oberon
+    }
+    
 }
