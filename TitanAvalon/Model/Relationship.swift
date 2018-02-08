@@ -22,7 +22,7 @@ class Relationship {
         var evils : [User] = []
         for user in users {
             let character = user.character!
-            if character.isEvils() && character != exclude {
+            if character.isEvils() && character != exclude && character != myself.character {
                 evils.append(user)
             }
         }

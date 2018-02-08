@@ -8,14 +8,14 @@ class CharacterGenerator {
         mapUserAndCharacter(users)
     }
     
-    func mapUserAndCharacter(_ users : [User]) {
+    fileprivate func mapUserAndCharacter(_ users : [User]) {
         let characters : [Character] = getCharacterArray(users.count)
         for i in 0..<users.count {
             users[i].character = characters[i]
         }
     }
     
-    func getCharacterArray(_ length : Int) -> [Character] {
+    fileprivate func getCharacterArray(_ length : Int) -> [Character] {
         let characters = getCharacterArrayByUsers(length)
         var randomCharacterArray: [Character] = []
         while randomCharacterArray.count < length {
@@ -27,7 +27,7 @@ class CharacterGenerator {
         return randomCharacterArray;
     }
     
-    func getCharacterArrayByUsers(_ length : Int) -> [Character] {
+    fileprivate func getCharacterArrayByUsers(_ length : Int) -> [Character] {
         if length == 5 {
             return [.Merlin, .Percival, .LsOfArther1, .Morcana, .Assassin]
         } else if length == 6 {

@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1E2AC820294484009DED48 /* SetupRoundEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E2AC720294484009DED48 /* SetupRoundEvent.swift */; };
+		0E1E2ACA202946CE009DED48 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1E2AC9202946CE009DED48 /* Event.swift */; };
 		0E231B9B200F13F700907D39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E231B9A200F13F700907D39 /* AppDelegate.swift */; };
-		0E231B9D200F13F700907D39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E231B9C200F13F700907D39 /* ViewController.swift */; };
+		0E231B9D200F13F700907D39 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E231B9C200F13F700907D39 /* GameController.swift */; };
 		0E231BA0200F13F700907D39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E231B9E200F13F700907D39 /* Main.storyboard */; };
 		0E231BA2200F13F700907D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E231BA1200F13F700907D39 /* Assets.xcassets */; };
 		0E231BA5200F13F700907D39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E231BA3200F13F700907D39 /* LaunchScreen.storyboard */; };
-		0E231BB0200F13F800907D39 /* TitanAvalonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E231BAF200F13F800907D39 /* TitanAvalonTests.swift */; };
+		0E55A62820258D9400A6AA24 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55A62720258D9400A6AA24 /* Game.swift */; };
 		0E74CC3D20254EC200FFAFCC /* RelationshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E74CC3C20254EC200FFAFCC /* RelationshipTests.swift */; };
+		0E74CC3F20254FFC00FFAFCC /* SetupRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E74CC3E20254FFC00FFAFCC /* SetupRound.swift */; };
+		0E74CC432025633500FFAFCC /* SetupRoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E74CC422025633500FFAFCC /* SetupRoundTests.swift */; };
+		0E74CC452025693C00FFAFCC /* InvalidArgumentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E74CC442025693C00FFAFCC /* InvalidArgumentError.swift */; };
 		0E95C3A82011908E0019B72A /* CharacterGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3A72011908D0019B72A /* CharacterGeneratorTests.swift */; };
 		0E95C3AC2011909C0019B72A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3A92011909C0019B72A /* Character.swift */; };
 		0E95C3AD2011909C0019B72A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E95C3AA2011909C0019B72A /* User.swift */; };
@@ -34,17 +39,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E1E2AC720294484009DED48 /* SetupRoundEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupRoundEvent.swift; sourceTree = "<group>"; };
+		0E1E2AC9202946CE009DED48 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		0E231B97200F13F700907D39 /* TitanAvalon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TitanAvalon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E231B9A200F13F700907D39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0E231B9C200F13F700907D39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E231B9C200F13F700907D39 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		0E231B9F200F13F700907D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E231BA1200F13F700907D39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E231BA4200F13F700907D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E231BA6200F13F700907D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E231BAB200F13F800907D39 /* TitanAvalonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TitanAvalonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E231BAF200F13F800907D39 /* TitanAvalonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitanAvalonTests.swift; sourceTree = "<group>"; };
 		0E231BB1200F13F800907D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E55A62720258D9400A6AA24 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0E74CC3C20254EC200FFAFCC /* RelationshipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationshipTests.swift; sourceTree = "<group>"; };
+		0E74CC3E20254FFC00FFAFCC /* SetupRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupRound.swift; sourceTree = "<group>"; };
+		0E74CC422025633500FFAFCC /* SetupRoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupRoundTests.swift; sourceTree = "<group>"; };
+		0E74CC442025693C00FFAFCC /* InvalidArgumentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvalidArgumentError.swift; sourceTree = "<group>"; };
 		0E95C3A72011908D0019B72A /* CharacterGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterGeneratorTests.swift; sourceTree = "<group>"; };
 		0E95C3A92011909C0019B72A /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		0E95C3AA2011909C0019B72A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -78,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1E2AC62029444F009DED48 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				0E1E2AC720294484009DED48 /* SetupRoundEvent.swift */,
+				0E1E2AC9202946CE009DED48 /* Event.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 		0E231B8E200F13F700907D39 = {
 			isa = PBXGroup;
 			children = (
@@ -101,16 +120,13 @@
 		0E231B99200F13F700907D39 /* TitanAvalon */ = {
 			isa = PBXGroup;
 			children = (
-				0E95C3A92011909C0019B72A /* Character.swift */,
-				0E95C3AB2011909C0019B72A /* CharacterGenerator.swift */,
-				0E95C3AA2011909C0019B72A /* User.swift */,
+				0E81AEAE20257F3100476ACF /* Model */,
+				0E81AEAD20257F0B00476ACF /* Controller */,
+				0E81AEAC20257EF600476ACF /* View */,
 				0E231B9A200F13F700907D39 /* AppDelegate.swift */,
-				0E231B9C200F13F700907D39 /* ViewController.swift */,
-				0E231B9E200F13F700907D39 /* Main.storyboard */,
 				0E231BA1200F13F700907D39 /* Assets.xcassets */,
-				0E231BA3200F13F700907D39 /* LaunchScreen.storyboard */,
 				0E231BA6200F13F700907D39 /* Info.plist */,
-				0EEDEEE6201AC289003E6F17 /* Relationship.swift */,
+				0E74CC442025693C00FFAFCC /* InvalidArgumentError.swift */,
 			);
 			path = TitanAvalon;
 			sourceTree = "<group>";
@@ -119,11 +135,42 @@
 			isa = PBXGroup;
 			children = (
 				0E95C3A72011908D0019B72A /* CharacterGeneratorTests.swift */,
-				0E231BAF200F13F800907D39 /* TitanAvalonTests.swift */,
 				0E231BB1200F13F800907D39 /* Info.plist */,
 				0E74CC3C20254EC200FFAFCC /* RelationshipTests.swift */,
+				0E74CC422025633500FFAFCC /* SetupRoundTests.swift */,
 			);
 			path = TitanAvalonTests;
+			sourceTree = "<group>";
+		};
+		0E81AEAC20257EF600476ACF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E231B9E200F13F700907D39 /* Main.storyboard */,
+				0E231BA3200F13F700907D39 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E81AEAD20257F0B00476ACF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E231B9C200F13F700907D39 /* GameController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0E81AEAE20257F3100476ACF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E1E2AC62029444F009DED48 /* Event */,
+				0E95C3A92011909C0019B72A /* Character.swift */,
+				0E95C3AB2011909C0019B72A /* CharacterGenerator.swift */,
+				0E95C3AA2011909C0019B72A /* User.swift */,
+				0EEDEEE6201AC289003E6F17 /* Relationship.swift */,
+				0E74CC3E20254FFC00FFAFCC /* SetupRound.swift */,
+				0E55A62720258D9400A6AA24 /* Game.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8DDD9421C31258EB034C512E /* Frameworks */ = {
@@ -360,9 +407,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E95C3AD2011909C0019B72A /* User.swift in Sources */,
+				0E1E2ACA202946CE009DED48 /* Event.swift in Sources */,
+				0E55A62820258D9400A6AA24 /* Game.swift in Sources */,
+				0E74CC452025693C00FFAFCC /* InvalidArgumentError.swift in Sources */,
+				0E74CC3F20254FFC00FFAFCC /* SetupRound.swift in Sources */,
 				0EEDEEE7201AC289003E6F17 /* Relationship.swift in Sources */,
+				0E1E2AC820294484009DED48 /* SetupRoundEvent.swift in Sources */,
 				0E95C3AC2011909C0019B72A /* Character.swift in Sources */,
-				0E231B9D200F13F700907D39 /* ViewController.swift in Sources */,
+				0E231B9D200F13F700907D39 /* GameController.swift in Sources */,
 				0E95C3AE2011909C0019B72A /* CharacterGenerator.swift in Sources */,
 				0E231B9B200F13F700907D39 /* AppDelegate.swift in Sources */,
 			);
@@ -372,7 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E231BB0200F13F800907D39 /* TitanAvalonTests.swift in Sources */,
+				0E74CC432025633500FFAFCC /* SetupRoundTests.swift in Sources */,
 				0E95C3A82011908E0019B72A /* CharacterGeneratorTests.swift in Sources */,
 				0E74CC3D20254EC200FFAFCC /* RelationshipTests.swift in Sources */,
 			);

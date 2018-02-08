@@ -45,16 +45,16 @@ class RelationshipTests: XCTestCase {
     }
     
     func testOtherEvils_Should_SeeEvils_Except_Oberon() {
-        let relationship = getRelationship(character: TitanAvalon.Character.Morcana)
+        let relationship = getRelationship(character: TitanAvalon.Character.Mordred)
         
         let actual = relationship.canSee()
         
-        let expected = getUser(characters: .Mordred, .Morcana, .Assassin)
+        let expected = getUser(characters: .Morcana, .Assassin)
         
         isSameCharacter(actual, expected)
     }
     
-    func testOtherGoods_Should_Not_SeeEvils() {
+    func testLsOfArther_Should_Not_SeeEvils() {
         let relationship = getRelationship(character: TitanAvalon.Character.LsOfArther1)
         let actual = relationship.canSee()
         isSameCharacter(actual, [])
