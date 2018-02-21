@@ -33,28 +33,52 @@ protocol SetupRoundDelegate {
     func onSetupEventHappend(_ event: SetupRoundEvent)
 }
 
-class SetupRound {
+class SetupRound : SetupRoundRepositoryDelegate {
     
+    fileprivate var users : [User]
+    var delegate : SetupRoundDelegate?
+    fileprivate var status : SetupStatus = .NotStart
+    fileprivate var repo : ISetupRoundRepository
     
-    var users : [User]
-    var deletgate : SetupRoundDelegate?
-    var status : SetupStatus = .NotStart
-    
-    init(_ users: [User]) {
+    init(_ users: [User], repo: ISetupRoundRepository) {
         self.users = users
+        self.repo = repo
+        self.repo.delegate = self
     }
     
-    func nextStage() throws {
-        let nextStatus : SetupStatus = SetupStatus(rawValue: self.status.rawValue + 1)!
+    func setStatus(_ status : SetupStatus) {
+        self.status = status
         
-        let events : [SetupRoundEvent] = createEvent(nextStatus)
-        
-        try setStatus(nextStatus)
+        let events : [SetupRoundEvent] = createEvent(status)
         
         triggerEvent(events)
     }
     
+    func nextStatus() {
+        if status == .SetupDone {
+            return
+        }
+        
+        let nextStatus = SetupStatus(rawValue: self.status.rawValue + 1)!
+        
+        repo.setStatus(status: nextStatus)
+    }
+    
+    func onNewStatus(status: SetupStatus) {
+        setStatus(status)
+    }
+    
     fileprivate func createEvent(_ status: SetupStatus) -> [SetupRoundEvent] {
+        let publicEvents =  createPublicEvent(status)
+        let privateEvents = createPrivateEvent(status)
+        return publicEvents + privateEvents
+    }
+    
+    fileprivate func createPublicEvent(_ status: SetupStatus) -> [SetupRoundEvent] {
+        return [SetupRoundEvent(status)]
+    }
+    
+    fileprivate func createPrivateEvent(_ status: SetupStatus) -> [SetupRoundEvent] {
         if status == .EvilsCheck {
             return createEvilsCheckEvent()
         } else if status == .MerlinCheck {
@@ -62,12 +86,8 @@ class SetupRound {
         } else if status == .PercivalCheck{
             return createPercivalCheckEvent()
         } else {
-            return createGeneralEvent(status)
+            return []
         }
-    }
-    
-    fileprivate func createGeneralEvent(_ status: SetupStatus) -> [SetupRoundEvent] {
-        return [SetupRoundEvent(status)]
     }
     
     fileprivate func createEvilsCheckEvent() -> [SetupRoundEvent] {
@@ -94,22 +114,14 @@ class SetupRound {
     }
     
     fileprivate func triggerEvent(_ event: SetupRoundEvent) {
-        if deletgate != nil {
-            deletgate?.onSetupEventHappend(event)
+        if delegate != nil {
+            delegate?.onSetupEventHappend(event)
         }
     }
     
     fileprivate func triggerEvent(_ events: [SetupRoundEvent]) {
         for event in events {
             triggerEvent(event)
-        }
-    }
-    
-    fileprivate func setStatus(_ newStatus: SetupStatus) throws {
-        if self.status.canChangeTo(newStatus) {
-            self.status = newStatus
-        } else {
-            throw InvalidArgumentError.SetupStatusWrong
         }
     }
 }

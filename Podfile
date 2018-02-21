@@ -7,6 +7,7 @@ target 'TitanAvalon' do
 
   # Pods for TitanAvalon
   pod 'Firebase/Core'
+  pod 'Firebase/Database'
   
   target 'TitanAvalonTests' do
     inherit! :search_paths

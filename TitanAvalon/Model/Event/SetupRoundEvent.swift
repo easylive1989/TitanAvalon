@@ -23,4 +23,12 @@ class SetupRoundEvent : Event {
         self.passive = passive
         self.status = status
     }
+    
+    func isPrivateEvent() -> Bool {
+        return eventActor != nil
+    }
+    
+    func isMyEvent(_ user: User) -> Bool {
+        return eventActor == user
+    }
 }

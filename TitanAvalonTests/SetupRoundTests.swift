@@ -25,31 +25,31 @@ class SetupRoundTests: XCTestCase {
     func testNextStage_Should_ChangeToNextStatus() {
         let setupRound = createSetupRound()
         do {
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .AllCloseEye)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .EvilsCheck)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .EvilsCheckEnd)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .AllCloseEye2)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .EvilsShow)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .MerlinCheck)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .EvilsHide)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .MerlinCheckEnd)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .MerlinAndMorcanaShow)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .PercivalCheck)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .MerlinAndMorcanaHide)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .PercivalCheckEnd)
-            try setupRound.nextStage()
+            try setupRound.nextStatus()
             XCTAssertTrue(setupRound.status == .SetupDone)
 
         } catch {
@@ -68,9 +68,9 @@ class SetupRoundTests: XCTestCase {
         let setupRound = createSetupRound()
         
         do {
-            try setupRound.nextStage()  //all close eyes
-            setupRound.deletgate = delegate
-            try setupRound.nextStage()  //evils check
+            try setupRound.nextStatus()  //all close eyes
+            setupRound.delegate = delegate
+            try setupRound.nextStatus()  //evils check
         } catch {
             XCTAssertTrue(false)
         }
@@ -83,17 +83,17 @@ class SetupRoundTests: XCTestCase {
         let setupRound = createSetupRound()
         
         do {
-            try setupRound.nextStage()  //all close eyes
-            try setupRound.nextStage()  //evils check
-            try setupRound.nextStage()  //evils check end
-            try setupRound.nextStage()  //all close eyes 2
-            try setupRound.nextStage()  //evils show
-            try setupRound.nextStage()  //merlin check
-            try setupRound.nextStage()  //evils hide
-            try setupRound.nextStage()  //merlin check end
-            try setupRound.nextStage()  //merlin and morcana show
-            setupRound.deletgate = delegate
-            try setupRound.nextStage()  //percival check
+            try setupRound.nextStatus()  //all close eyes
+            try setupRound.nextStatus()  //evils check
+            try setupRound.nextStatus()  //evils check end
+            try setupRound.nextStatus()  //all close eyes 2
+            try setupRound.nextStatus()  //evils show
+            try setupRound.nextStatus()  //merlin check
+            try setupRound.nextStatus()  //evils hide
+            try setupRound.nextStatus()  //merlin check end
+            try setupRound.nextStatus()  //merlin and morcana show
+            setupRound.delegate = delegate
+            try setupRound.nextStatus()  //percival check
         } catch {
             XCTAssertTrue(false)
         }
@@ -106,13 +106,13 @@ class SetupRoundTests: XCTestCase {
         let setupRound = createSetupRound()
         
         do {
-            try setupRound.nextStage()  //all close eyes
-            try setupRound.nextStage()  //evils check
-            try setupRound.nextStage()  //evils check end
-            try setupRound.nextStage()  //all close eyes 2
-            try setupRound.nextStage()  //evils show
-            setupRound.deletgate = delegate
-            try setupRound.nextStage()  //merlin check
+            try setupRound.nextStatus()  //all close eyes
+            try setupRound.nextStatus()  //evils check
+            try setupRound.nextStatus()  //evils check end
+            try setupRound.nextStatus()  //all close eyes 2
+            try setupRound.nextStatus()  //evils show
+            setupRound.delegate = delegate
+            try setupRound.nextStatus()  //merlin check
         } catch {
             XCTAssertTrue(false)
         }
